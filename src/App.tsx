@@ -2,6 +2,7 @@ import AllNews from './components/AllNews';
 import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TopHeadlines from './components/top-Headlines';
+import Footer from './components/footer';
 function App() {
   return (
     <> 
@@ -16,6 +17,7 @@ function App() {
       </Routes>
       </main>
     </div>
+    <Footer />
     </BrowserRouter>
     </>
   );
