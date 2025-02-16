@@ -12,12 +12,12 @@ const Header = () => {
     <header>
       <nav className="fixed top-0 left-0 w-full h-auto backdrop-blur-md bg-opacity-80 bg-white/30 rounded-b-lg shadow-lg z-10 flex items-center justify-between p-4">
         {/* Logo */}
-        <h1 className="text-3xl font-bold text-gray-900">Top Stories</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Global News</h1>
 
         {/* Navigation Links */}
         <ul className={`flex gap-6 ${active ? "flex-col absolute top-16 left-0 w-full bg-white py-4" : "hidden lg:flex"}`}>
           <li>
-            <Link className="no-underline font-semibold text-black hover:text-blue-600 transition-colors" to="/" onClick={() => setActive(false)}>Breaking News</Link>
+            <Link className="no-underline font-semibold text-black hover:text-blue-600 transition-colors" to="/" onClick={() => setActive(false)}>Top Stories</Link>
           </li>
           <li className="relative">
             <button className="no-underline font-semibold flex items-center gap-2 text-black hover:text-blue-600 transition-colors" onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}>
